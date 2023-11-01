@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pero Bank Financing form</title>
+    <link rel="stylesheet" href="p3.css">
+</head>
+<body>
+  
+    <h1 id="title">Pero-Bank Financing Form</h1>
+  <p id="description">please fill out this Pero-Bank financing form to benefit from help in carrying out your projects</p>
+
+<div class="container">
+  <form id="survey-form">
+
+    <label id="name-label" for="name">Name
+      <input id="name" type="text" required placeholder="Enter your Name"/>
+    </label>
+
+  <label id="email-label" for="name">Email
+    <input id="email" type="email" required placeholder="Enter your Email"/>
+  </label>
+
+  <label id="number-label" for="name">Age
+    <input id="number" type="number" min="18" max="80" placeholder="Age" required/>
+  </label>
+
+  <label for="dropdown" for="name">
+Please choose one of our business areas for which you would like to be a financier
+    <select id="dropdown">
+      <option class="" >Select an option</option>
+      <option class="drop-option" >Agriculture</option>
+      <option class="drop-option" >Trade and Sales</option>
+      <option class="drop-option" >IT & Office Automation</option>
+      <option class="drop-option" >Building & Real estate</option>
+      <option class="drop-option" >Farm and Breeding</option>
+    </select>
+  </label>
+
+<div id="radio">  
+  <p>Have you already received financing from Pero-Bank?</p>
+  <div> 
+  <label >
+    <input name="user-answer"  type="radio" value="Yes Already" id="check" checked/> Yes Already
+  </label>
+  </div> 
+
+<div> 
+  <label >
+    <input  name="user-answer" type="radio" value="No Not yet" id="check" /> No Not yet
+  </label>
+  </div> 
+  </div>
+
+<div id="checkboxes">
+  <label >How do you describe your personality ?
+    <div><input type="checkbox" value="calm" id="check" /> calm</div>
+    <div><input type="checkbox" value="respectful" id="check" /> respectful</div>
+    <div><input type="checkbox" value="integrated" id="check" /> integrated</div>
+    <div><input type="checkbox" value="shy" id="check" /> shy</div>
+    <div><input type="checkbox" value="friendly" id="check" /> friendly</div>
+    <div><input type="checkbox" value="leader" id="check" /> leader</div>
+    <div><input type="checkbox" value="turbulent" id="check" /> turbulent</div>
+    <div><input type="checkbox" value="angry" id="check" /> angry</div>
+    <div><input type="checkbox" value="none of that qualifies me" id="check" /> none of that qualifies me</div>
+  </label>
+</div>
+
+  <p id="area">Can you tell us briefly about your project?</p>
+
+  <textarea type="checkbox" rows="5" placeholder="Enter your comment here..." id="check"></textarea>
+
+  <p>We will contact you for a possible interview. Read <a href="#">About our policy</a>
+</p>
+
+    <input id="submit" name="submit" type="submit" value="Submit" id="check" />
+    
+  </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!-- DOCUMENT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Documentation</title>
+    <link rel="stylesheet" href="p2.css">
+</head>
+<body>
+  <main id="main-doc">
+
+      <nav id="navbar">
+        <header>C++ Documentation</header>
+  <ul> 
+    <li><a class="nav-link" href="#introduction">introduction</a></li>
+    <li><a class="nav-link" href="#what_you_should_already_know">what you should already know</a></li>
+    <li><a class="nav-link" href="#hello_world">hello world</a></li>
+    <li><a class="nav-link" href="#variables">variables</a></li>
+    <li><a class="nav-link" href="#variable_scope">variable scope</a></li>
+    <li><a class="nav-link" href="#constants">constants</a></li>
+    <li><a class="nav-link" href="#data_types">data types</a></li>
+    <li><a class="nav-link" href="#if…else_statement">if…else statement</a></li>
+    <li><a class="nav-link" href="#while_statement">while statement</a></li>
+    <li><a class="nav-link" href="#function_declarations">function declarations</a></li>
+    <li><a class="nav-link" href="#reference">reference</a></li>
+  </ul>
+</nav>
+
+
+
+    <section class="main-section" id="introduction" >
+      <header>introduction</header>
+      <div>
+
+        <p>C++ is a general-purpose programming language that was developed by Bjarne Stroustrup in 1983. It is an extension of the C programming language and supports object-oriented programming, procedural programming, and generic programming. C++ is widely used in developing operating systems, system software, device drivers, embedded software, and video games. </p>
+
+      </div>
+    </section>
+    <section class="main-section" id="what_you_should_already_know" >
+      <header>what you should already know</header>
+      <div>
+
+        <p>To learn C++, you should have a basic understanding of the following concepts:
+          <ul>
+            <li>JavaScript and Java</li>
+          </ul>
+        </p>
+
+      </div>
+    </section>
+    <section class="main-section" id="hello_world" >
+      <header>hello world</header>
+      <div>
+
+        <p>Here’s a simple “Hello world” program in C++:  
+         <pre class='cpp'><code>#include <iostream>
+
+int main() {
+    std::cout << "Hello world!";
+    return 0;
+}</code>
+</pre> This program uses the cout object from the iostream library to output the string “Hello world!” to the console.
+        </p>
+
+      </div>
+    </section>
+    <section class="main-section" id="variables" >
+      <header>variables</header>
+      <div>
+
+        <p>In C++, variables are used to store data. A variable is defined by specifying its type and name. Here’s an example:
+           <pre class='cpp'><code>int age = 25;
+</code></pre> Here, type is the type of the variable (such as int, float, or double) and name is the name of the variable.  </p>
+
+      </div>
+    </section>
+    <section class="main-section" id="variable_scope" >
+      <header>variable scope</header>
+      <div>
+
+        <p>The scope of a variable determines where it can be accessed in a program. In C++, variables can have either local or global scope.
+
+A local variable is declared inside a function or block and can only be accessed within that function or block. Here’s an example:<pre class='cpp'><code>void myFunction() {
+    int x = 5; // local variable
+    std::cout << x;
+}</code></pre>A global variable is declared outside of any function or block and can be accessed from anywhere in the program. Here’s an example:  
+
+<pre class='cpp'><code>int x = 5; // global variable
+void myFunction() {
+    std::cout << x;
+}
+</code></pre>
+           </p>
+
+      </div>
+    </section>
+    <section class="main-section" id="constants" >
+      <header>constants</header>
+      <div>
+
+        <p>In C++, constants are used to define values that cannot be changed during program execution. The syntax for defining a constant is:
+<pre class='cpp'><code>const type name = value;
+}
+</code></pre>Here, type is the type of the constant (such as int, float, or double), name is the name of the constant, and value is its initial value.
+        </p>
+
+      </div>
+    </section>
+    <section class="main-section" id="data_types" >
+      <header>data types</header>
+      <div>
+
+        <p>C++ supports several data types, including:
+          <ul> 
+            <li>int: integer values (such as 1, 2, 3)</li>
+            <li>float: floating-point values (such as 3.14)</li>
+            <li>double: double-precision floating-point values (such as 3.14159)</li>
+            <li>char: single characters (such as ‘a’, ‘b’, ‘c’)</li>
+            <li>bool: boolean values (either true or false)</li>
+          </ul> 
+</p>
+
+      </div>
+    </section>
+    <section class="main-section" id="if…else_statement" >
+      <header>if…else statement</header>
+      <div>
+
+        <p>The if…else statement is used to execute code based on a condition. Here’s an example: <pre class='cpp'>if (x > y) {
+    std::cout << "x is greater than y";
+} else {
+    std::cout << "y is greater than x";
+}
+</pre>This code compares the values of x and y. If x is greater than y, it outputs “x is greater than y”. Otherwise, it outputs “y is greater than x”.
+        </p>
+
+      </div>
+    </section>
+    <section class="main-section" id="while_statement" >
+      <header>while statement</header>
+      <div>
+
+        <p>The while statement is used to execute code repeatedly while a condition is true. Here’s an example: 
+          <pre class='cpp'><code>int i = 0;
+
+while (i < 10) {
+    std::cout << i << "\n";
+    i++;
+}
+</code></pre>This code outputs the numbers from 0 to 9. </p>
+
+      </div>
+    </section>
+    <section class="main-section" id="function_declarations" >
+      <header>function declarations</header>
+      <div>
+
+        <p>Functions are used to group statements together into reusable blocks of code. Here’s an example:<pre class='cpp'><code>int add(int x, int y) {
+    return x + y;
+}
+</code></pre>This code defines a function called add that takes two integer parameters (x and y) and returns their sum.  </p>
+
+      </div>
+    </section>
+    <section class="main-section" id="reference" >
+      <header>reference</header>
+      <div>
+
+        <p>For more information on <a href="https://learn.microsoft.com/fr-fr/cpp/cpp/?view=msvc-170" alt="link to c++ documentation">C++</a>, you can refer to .   <a href="https://learn.microsoft.com/fr-fr/cpp/cpp/?view=msvc-170" alt="link to c++ documentation">cplusplus.com</a></p>
+
+      </div>
+    </section>
+  <main>
+</body>
+</html>
